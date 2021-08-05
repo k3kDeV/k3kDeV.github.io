@@ -11,6 +11,36 @@ body {
     box-sizing: border-box;
 }
 
+#formula {
+    text-align: center;
+    justify-content: center;
+}
+
+input {
+    background-color: #353535;
+    color: white;
+    border: 4px solid blueviolet;
+    margin: 5px 5px 5px 5px;
+}
+
+#text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    width: 350px;
+    height: 250px;
+    line-break: auto;
+    border: 4px solid blueviolet;
+    background-color: #353535;
+    color: white;
+    margin: 5px 5px 5px 5px;
+}
+input[type=email] {
+    width: 200px;
+}
+input[type=submit]:hover {
+    background-color: blue;
+}
+
 header{
     margin-top:-10px;
     padding: 15px;
@@ -29,7 +59,7 @@ header{
 
 #back:hover{
     background-color: blueviolet;
-    border: 4px solid #45095b;
+    border: 5px solid #45095b;
 }
 
 #sprzet{
@@ -45,10 +75,10 @@ header{
     padding: 25px;
     margin: auto;
 }
-
 a{
     color: white;
     text-decoration: none;
+    max-width: 100px;
 }
 
 footer {

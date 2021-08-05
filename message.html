@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Koziolek - Wysyłanie Wiadomości</title>
+    <link rel="stylesheet" href="css/skills.css">
+    <script>
+        function submitMessage() {
+            const email = document.getElementById("email");
+            const text = document.getElementById("text");
+
+            function changeColor(option) {
+                option.style.border = "red solid 4px";
+                setTimeout(function() {
+                    option.style.border = "blueviolet solid 4px";
+                    option.style.border = "blueviolet solid 4px";
+                }, 500);
+            }
+
+            if(!email.value && !text.value) { changeColor(email); changeColor(text) }
+            else if(!text.value)  { changeColor(text) }
+            else if(!email.value) { changeColor(email); }
+            else email.value = ""; text.value = "";
+
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta charset="utf-8">
+</head>
+<body>
+
+<header><h3>Wyślij wiadomość:</h3></header>
+<a href="./index.html"><div id="back">Powrót</div></a>
+<div id="formula">
+    <textarea id="text" placeholder="Treść wiadomości"></textarea></br>
+    <input id="email" type="email" placeholder="Email"> </br>
+    <input type="submit" id="submit" onclick="submitMessage()">
+</div>
+<footer>
+    Miło cię tu widzieć! Wpadaj częściej :P
+</footer>
+
+</body>
+</html>
