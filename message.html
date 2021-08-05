@@ -12,12 +12,11 @@
                 option.style.border = "red solid 4px";
                 setTimeout(function() {
                     option.style.border = "blueviolet solid 4px";
-                    option.style.border = "blueviolet solid 4px";
                 }, 500);
             }
 
-            if(!email.value && !text.value) { changeColor(email); changeColor(text) }
-            else if(!text.value)  { changeColor(text) }
+            if(!email.value && !text.value) { changeColor(email); changeColor(text); }
+            else if(!text.value)  { changeColor(text); }
             else if(!email.value) { changeColor(email); }
             else email.value = ""; text.value = "";
 
