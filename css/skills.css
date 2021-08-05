@@ -1,0 +1,60 @@
+:root {
+    --bgcolor: #242424;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color:var(--bgcolor);
+    color: white;
+    box-sizing: border-box;
+}
+
+header{
+    margin-top:-10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #353535;
+    font-size: 20px;
+}
+
+#back{
+    background-color: #353535;
+    border: 5px solid blueviolet;
+    width: 100px;
+    margin: 20px;
+    padding: 15px;
+}
+
+#back:hover{
+    background-color: blueviolet;
+    border: 4px solid #45095b;
+}
+
+#sprzet{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    min-height: 200px;
+}
+
+.block{
+    width: 200px;
+    border: 5px solid blueviolet;
+    padding: 25px;
+    margin: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
